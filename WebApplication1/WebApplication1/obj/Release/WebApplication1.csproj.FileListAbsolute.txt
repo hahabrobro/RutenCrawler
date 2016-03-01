@@ -1,0 +1,8 @@
+C:\Users\Administrator\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\Administrator\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\Administrator\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\Administrator\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\EntityFramework.dll
+C:\Users\Administrator\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\EntityFramework.xml
+C:\Users\Administrator\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\zh-Hant\EntityFramework.resources.dll
+C:\Users\Administrator\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Release\WebApplication1.dll
+C:\Users\Administrator\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Release\WebApplication1.pdb

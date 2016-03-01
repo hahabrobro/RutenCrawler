@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="iniki_RivalEntities-Web.config Connection String" description="iniki_RivalEntities 應用程式在 web.config 中用來存取資料庫的連接字串。" defaultValue="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=.;initial catalog=iniki_Rival;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Administrator\\documents\\visual\ studio\ 2013\\Projects\\WebApplication1\\WebApplication1\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='iniki_RivalEntities']/@connectionString" />
+  </parameter>
+  <parameter name="iniki_RivalEntities1-Web.config Connection String" description="iniki_RivalEntities1 應用程式在 web.config 中用來存取資料庫的連接字串。" defaultValue="metadata=res://*/Model2.csdl|res://*/Model2.ssdl|res://*/Model2.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=kub2k8lauj.database.windows.net;initial catalog=iniki_Rival;user id=greedeye;password=Valerie0616;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Administrator\\documents\\visual\ studio\ 2013\\Projects\\WebApplication1\\WebApplication1\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='iniki_RivalEntities1']/@connectionString" />
+  </parameter>
+</parameters>

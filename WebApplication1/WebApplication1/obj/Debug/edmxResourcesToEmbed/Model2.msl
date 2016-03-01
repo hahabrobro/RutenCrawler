@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="iniki_RivalModel1StoreContainer" CdmEntityContainer="iniki_RivalEntities1">
+    <EntitySetMapping Name="Rival_Products">
+      <EntityTypeMapping TypeName="iniki_RivalModel1.Rival_Products">
+        <MappingFragment StoreEntitySet="Rival_Products">
+          <ScalarProperty Name="SellPrice_Record" ColumnName="SellPrice_Record" />
+          <ScalarProperty Name="BidValue" ColumnName="BidValue" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="ProductsName" ColumnName="ProductsName" />
+          <ScalarProperty Name="ProductsUrl" ColumnName="ProductsUrl" />
+          <ScalarProperty Name="SellPrice" ColumnName="SellPrice" />
+          <ScalarProperty Name="Product_Status_Date" ColumnName="Product_Status_Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rival_ProductSell">
+      <EntityTypeMapping TypeName="iniki_RivalModel1.Rival_ProductSell">
+        <MappingFragment StoreEntitySet="Rival_ProductSell">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="Purchaser" ColumnName="Purchaser" />
+          <ScalarProperty Name="Product_SKU" ColumnName="Product_SKU" />
+          <ScalarProperty Name="SellDate" ColumnName="SellDate" />
+          <ScalarProperty Name="SellValue" ColumnName="SellValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rival_Table">
+      <EntityTypeMapping TypeName="iniki_RivalModel1.Rival_Table">
+        <MappingFragment StoreEntitySet="Rival_Table">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="ProductsName" ColumnName="ProductsName" />
+          <ScalarProperty Name="SellDate" ColumnName="SellDate" />
+          <ScalarProperty Name="SellValue" ColumnName="SellValue" />
+          <ScalarProperty Name="SellPrice" ColumnName="SellPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

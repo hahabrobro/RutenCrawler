@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="iniki_RivalModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Rival_Products">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ProductsName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ProductsUrl" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="BidValue" Type="int" Nullable="false" />
+    <Property Name="SellPrice" Type="int" Nullable="false" />
+    <Property Name="Product_Status_Date" Type="datetime" />
+    <Property Name="SellPrice_Record" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Rival_ProductSell">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Purchaser" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Product_SKU" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SellDate" Type="datetime" Nullable="false" />
+    <Property Name="SellValue" Type="int" />
+  </EntityType>
+  <EntityType Name="Rival_Table">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ProductsName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SellDate" Type="datetime" Nullable="false" />
+    <Property Name="SellValue" Type="int" />
+    <Property Name="SellPrice" Type="int" />
+  </EntityType>
+  <EntityContainer Name="iniki_RivalModel1StoreContainer">
+    <EntitySet Name="Rival_Products" EntityType="Self.Rival_Products" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Rival_ProductSell" EntityType="Self.Rival_ProductSell" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Rival_Table" EntityType="Self.Rival_Table" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

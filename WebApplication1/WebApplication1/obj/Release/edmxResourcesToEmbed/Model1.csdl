@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="iniki_RivalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Rival_Products">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProductsName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProductsUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SellValue" Type="Int32" Nullable="false" />
+    <Property Name="SellPrice" Type="Int32" Nullable="false" />
+    <Property Name="Product_Status_Date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Rival_ProductSell">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Purchaser" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Product_SKU" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SellDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SellValue" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Rival_Table">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProductsName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SellDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SellValue" Type="Int32" />
+    <Property Name="SellPrice" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="iniki_RivalEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Rival_Products" EntityType="Self.Rival_Products" />
+    <EntitySet Name="Rival_ProductSell" EntityType="Self.Rival_ProductSell" />
+    <EntitySet Name="Rival_Table" EntityType="Self.Rival_Table" />
+  </EntityContainer>
+</Schema>
